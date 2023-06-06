@@ -7,14 +7,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.constraintlayout.motion.widget.MotionLayout
+import androidx.drawerlayout.widget.DrawerLayout
 import uz.farxod.mobileoperators.databinding.FragmentMainBinding
 import uz.farxod.mobileoperators.databinding.FragmentMotionBinding
 
 
 class MotionFragment : Fragment() {
+
     private var _binding: FragmentMotionBinding? = null
     private val binding get() = _binding!!
-
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
