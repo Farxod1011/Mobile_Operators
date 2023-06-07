@@ -11,7 +11,6 @@ import androidx.drawerlayout.widget.DrawerLayout
 import uz.farxod.mobileoperators.databinding.FragmentMainBinding
 import uz.farxod.mobileoperators.databinding.FragmentMotionBinding
 
-
 class MotionFragment : Fragment() {
 
     private var _binding: FragmentMotionBinding? = null

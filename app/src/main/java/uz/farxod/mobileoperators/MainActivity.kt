@@ -17,30 +17,36 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
-    private val fragManager = supportFragmentManager.beginTransaction()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //fragManager.add(R.id.fragment_blank, MotionFragment()).commit()
+        binding.bottomNavLayout.visibility = View.GONE
+        supportFragmentManager.beginTransaction().add(R.id.fragment_blank, MotionFragment()).commit()
 
-        binding.bottomNavigationView.setOnItemSelectedListener {
-            when(it.itemId){
-                R.id.home -> replaceFragment(MainFragment())
-                R.id.news -> replaceFragment(NewsFragment())
-                R.id.operators -> replaceFragment(OperatorsFragment())
-                R.id.settings -> replaceFragment(SettingsFragment())
+        Handler().postDelayed({
 
-                else -> {}
+            binding.bottomNavLayout.visibility = View.VISIBLE
+            replaceFragment(MainFragment()) //asosiy oyna
+
+            binding.bottomNavigationView.setOnItemSelectedListener {
+                when(it.itemId){
+                    R.id.home -> replaceFragment(MainFragment())
+                    R.id.news -> replaceFragment(NewsFragment())
+                    R.id.operators -> replaceFragment(OperatorsFragment())
+                    R.id.settings -> replaceFragment(SettingsFragment())
+
+                    else -> {}
+                }
+                true
             }
-            true
-        }
+        }, 4000)
 
     }
 
     private fun replaceFragment(fragment: Fragment) {
-        fragManager.replace(R.id.fragment_blank, fragment).commit()
+        supportFragmentManager.beginTransaction().replace(R.id.fragment_blank, fragment).commit()
     }
 }
