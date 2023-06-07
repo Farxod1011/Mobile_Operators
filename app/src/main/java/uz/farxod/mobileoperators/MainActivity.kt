@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 true
             }
-        }, 4000)
+        }, 4500)
 
     }
 
