@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#F1B209</color>
-    <color name="purple_500">#F1B209</color>
-    <color name="purple_700">#FF3700B3</color>
+    <color name="purple_200">#00897B</color>
+    <color name="purple_500">#00897B</color>
+    <color name="purple_700">#00897B</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#DFFFFFFF</color>
-    <color name="Beeline">#F1B209</color>
-    <color name="Ucell">#5E35B1</color>
+    <color name="Beeline">#FDBE0B</color>
+    <color name="Ucell">#4E217F</color>
     <color name="MobiUz">#CA130F</color>
     <color name="Uzmobile">#1E88E5</color>
 

@@ -1,5 +1,6 @@
 package uz.farxod.mobileoperators
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.KeyEvent
 import androidx.fragment.app.Fragment
@@ -12,6 +13,7 @@ import android.webkit.WebViewClient
 import androidx.fragment.app.FragmentActivity
 import uz.farxod.mobileoperators.databinding.FragmentMotionBinding
 import uz.farxod.mobileoperators.databinding.FragmentNewsBinding
+import java.lang.Math.log
 
 class NewsFragment : Fragment() {
 
@@ -31,7 +33,7 @@ class NewsFragment : Fragment() {
         val webView: WebView = binding.webView
         webView.webViewClient = WebViewClient() //Это позволяет обрабатывать переходы по ссылкам внутри WebView.
 
-        webView.loadUrl("https://beeline.uz/uz/events/category/news")
+        webView.loadUrl("https://beeline.uz/uz/events/category/news") //"https://beeline.uz/uz/events/category/news"
 
         binding.backWeb.setOnClickListener { webView.goBack() }     //oldingi adresga qaytishi un
         binding.refreshWeb.setOnClickListener {
@@ -40,9 +42,7 @@ class NewsFragment : Fragment() {
             binding.refreshWeb.startAnimation(rotate)               //anim
         }
 
-
     }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

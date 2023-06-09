@@ -12,7 +12,6 @@ import androidx.constraintlayout.motion.widget.MotionLayout
 import androidx.fragment.app.Fragment
 import uz.farxod.mobileoperators.databinding.ActivityMainBinding
 
-
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
@@ -26,14 +25,14 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNavLayout.visibility = View.GONE
         supportFragmentManager.beginTransaction().add(R.id.fragment_blank, MotionFragment()).commit()
 
-        Handler().postDelayed({
+        Handler().postDelayed({ //shuncha vaxtdan kiyin quyidagi kod ishlashi uchun
 
             binding.bottomNavLayout.visibility = View.VISIBLE
-            replaceFragment(MainFragment()) //asosiy oyna
+            replaceFragment(BeelineMainFragment()) //asosiy oyna
 
             binding.bottomNavigationView.setOnItemSelectedListener {
                 when(it.itemId){
-                    R.id.home -> replaceFragment(MainFragment())
+                    R.id.home -> replaceFragment(BeelineMainFragment())
                     R.id.news -> replaceFragment(NewsFragment())
                     R.id.operators -> replaceFragment(OperatorsFragment())
                     R.id.settings -> replaceFragment(SettingsFragment())

@@ -4,28 +4,99 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".MainFragment">
+    tools:context=".UcellMainFragment">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
+        <!--/////////////////////////////////////////////////////////////////////////-->
         <LinearLayout
-            android:background="@color/Beeline"
+            android:background="@color/Ucell"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/baseline_menu_24"
-                android:id="@+id/btn_menu"
-                android:layout_margin="12dp"
-                />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_menu_24"
+                        android:id="@+id/btn_menu"
+                        android:layout_margin="12dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_arrow_back_24"
+                        android:id="@+id/btn_back_logo"
+                        android:layout_margin="12dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
 
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ucell"
+                        android:id="@+id/img_logo"
+                        android:layout_margin="12dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1">
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_arrow_next_24"
+                        android:id="@+id/btn_next_logo"
+                        android:layout_margin="12dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
-
+        <!--/////////////////////////////////////////////////////////////////////////-->
         <LinearLayout
             android:background="@color/font"
             android:layout_width="match_parent"
@@ -49,6 +120,7 @@
                     android:layout_weight="1">
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/internet_paket"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:clickable="true"
@@ -68,14 +140,14 @@
 
 
                             <ImageView
-                                android:src="@drawable/worldwide_b"
+                                android:src="@drawable/worldwide_uc"
                                 android:layout_width="60dp"
                                 android:layout_height="60dp"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
-                                android:textColor="@color/Beeline"
+                                android:textColor="@color/Ucell"
                                 android:text="Интернет пакеты"
                                 android:layout_gravity="center"
                                 android:textSize="15sp"
@@ -112,7 +184,7 @@
 
 
                             <ImageView
-                                android:src="@drawable/pin_b"
+                                android:src="@drawable/pin_uc"
                                 android:layout_width="60dp"
                                 android:layout_height="60dp"/>
                             <TextView
@@ -120,7 +192,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
                                 android:text="Коды USSD"
-                                android:textColor="@color/Beeline"
+                                android:textColor="@color/Ucell"
                                 android:layout_gravity="center"
                                 android:textSize="15sp"
                                 />
@@ -143,6 +215,7 @@
                     android:gravity="center"
                     android:layout_weight="1">
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/tarif"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:clickable="true"
@@ -162,7 +235,7 @@
 
 
                             <ImageView
-                                android:src="@drawable/sim_b"
+                                android:src="@drawable/sim_uc"
                                 android:layout_width="60dp"
                                 android:layout_height="60dp"/>
                             <TextView
@@ -170,7 +243,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
                                 android:text="Тарифные планы"
-                                android:textColor="@color/Beeline"
+                                android:textColor="@color/Ucell"
                                 android:layout_gravity="center"
                                 android:textSize="15sp"
                                 />
@@ -186,6 +259,7 @@
                     android:gravity="center"
                     android:layout_weight="1">
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/xizmatlar"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:clickable="true"
@@ -206,7 +280,7 @@
 
 
                             <ImageView
-                                android:src="@drawable/vehicle_b"
+                                android:src="@drawable/vehicle_uc"
                                 android:layout_width="60dp"
                                 android:layout_height="60dp"/>
                             <TextView
@@ -214,7 +288,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
                                 android:text="Услуги"
-                                android:textColor="@color/Beeline"
+                                android:textColor="@color/Ucell"
                                 android:layout_gravity="center"
                                 android:textSize="15sp"
                                 />
@@ -258,7 +332,7 @@
 
 
                             <ImageView
-                                android:src="@drawable/clock_b"
+                                android:src="@drawable/clock_uc"
                                 android:layout_width="60dp"
                                 android:layout_height="60dp"/>
                             <TextView
@@ -266,7 +340,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
                                 android:text="Пакеты минут"
-                                android:textColor="@color/Beeline"
+                                android:textColor="@color/Ucell"
                                 android:layout_gravity="center"
                                 android:textSize="15sp"
                                 />
@@ -302,7 +376,7 @@
 
 
                             <ImageView
-                                android:src="@drawable/email_b"
+                                android:src="@drawable/email_uc"
                                 android:layout_width="60dp"
                                 android:layout_height="60dp"/>
                             <TextView
@@ -310,7 +384,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
                                 android:text="CMC Пакеты"
-                                android:textColor="@color/Beeline"
+                                android:textColor="@color/Ucell"
                                 android:layout_gravity="center"
                                 android:textSize="15sp"
                                 />
@@ -322,65 +396,65 @@
 
         </LinearLayout>
 
-<!--        <LinearLayout-->
-<!--            android:background="@color/Beeline"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="0dp"-->
-<!--            android:layout_weight="1">-->
+        <!--        <LinearLayout-->
+        <!--            android:background="@color/Beeline"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            android:layout_weight="1">-->
 
-<!--        </LinearLayout>-->
+        <!--        </LinearLayout>-->
 
     </LinearLayout>
-<!--///////////////////////////////////////////////////////////////////////////-->
+    <!--///////////////////////////////////////////////////////////////////////////-->
 
-<!--    <com.google.android.material.navigation.NavigationView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:id="@+id/nav_view"-->
-<!--        android:layout_gravity="start"-->
-<!--        app:headerLayout="@layout/nav_header"-->
-<!--        app:menu="@menu/nav_menu"-->
-<!--        app:itemTextColor="@color/Beeline"-->
-<!--        app:itemIconTint="@color/black"/>-->
+    <!--    <com.google.android.material.navigation.NavigationView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:id="@+id/nav_view"-->
+    <!--        android:layout_gravity="start"-->
+    <!--        app:headerLayout="@layout/nav_header"-->
+    <!--        app:menu="@menu/nav_menu"-->
+    <!--        app:itemTextColor="@color/Beeline"-->
+    <!--        app:itemIconTint="@color/black"/>-->
 
-<!--///////////////////////////////////////////////////////////////////////////-->
+    <!--///////////////////////////////////////////////////////////////////////////-->
 
-<!--    <androidx.coordinatorlayout.widget.CoordinatorLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent">-->
+    <!--    <androidx.coordinatorlayout.widget.CoordinatorLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
 
-<!--        <com.google.android.material.bottomappbar.BottomAppBar-->
-<!--            android:id="@+id/bottomAppBar"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="bottom"-->
-<!--            android:background="@color/white"-->
-<!--            app:fabCradleMargin="8dp"-->
-<!--            app:fabCradleRoundedCornerRadius="35dp"-->
-<!--            app:fabCradleVerticalOffset="4dp">-->
+    <!--        <com.google.android.material.bottomappbar.BottomAppBar-->
+    <!--            android:id="@+id/bottomAppBar"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="bottom"-->
+    <!--            android:background="@color/white"-->
+    <!--            app:fabCradleMargin="8dp"-->
+    <!--            app:fabCradleRoundedCornerRadius="35dp"-->
+    <!--            app:fabCradleVerticalOffset="4dp">-->
 
-<!--            <com.google.android.material.bottomnavigation.BottomNavigationView-->
-<!--                android:id="@+id/bottomNavigationView"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginEnd="16dp"-->
-<!--                android:background="@android:color/transparent"-->
-<!--                app:menu="@menu/bottom_menu"-->
-<!--                app:labelVisibilityMode="labeled"/>-->
+    <!--            <com.google.android.material.bottomnavigation.BottomNavigationView-->
+    <!--                android:id="@+id/bottomNavigationView"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginEnd="16dp"-->
+    <!--                android:background="@android:color/transparent"-->
+    <!--                app:menu="@menu/bottom_menu"-->
+    <!--                app:labelVisibilityMode="labeled"/>-->
 
-<!--        </com.google.android.material.bottomappbar.BottomAppBar>-->
+    <!--        </com.google.android.material.bottomappbar.BottomAppBar>-->
 
-<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:backgroundTint="@color/white"-->
-<!--            android:src="@drawable/baseline_add_24"-->
-<!--            app:layout_anchor="@id/bottomAppBar"-->
-<!--            app:maxImageSize="40dp"-->
-<!--            android:id="@+id/fab"-->
-<!--            app:tint="@color/Beeline" />-->
+    <!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:backgroundTint="@color/white"-->
+    <!--            android:src="@drawable/baseline_add_24"-->
+    <!--            app:layout_anchor="@id/bottomAppBar"-->
+    <!--            app:maxImageSize="40dp"-->
+    <!--            android:id="@+id/fab"-->
+    <!--            app:tint="@color/Beeline" />-->
 
-<!--    </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+    <!--    </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
 
-<!--///////////////////////////////////////////////////////////////////////////-->
+    <!--///////////////////////////////////////////////////////////////////////////-->
 </FrameLayout>
